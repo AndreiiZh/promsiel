@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+{# Load the tag library #}
+{% load bootstrap4 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+<style>
+    html, body {
+        height: 80%;
+    }
+</style>
+<div class="container">
+    <div class="row product_detail">
+        <div class="col-lg-6 product_detail_description">
+            <a></a>
+            <p></p>
+        </div>
+        <div class="col-lg-6 product_detail_img">
+            <img src="{% static 'img/aero_product_1.png' %}">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

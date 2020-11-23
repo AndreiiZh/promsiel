@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+{# Load the tag library #}
+{% load bootstrap4 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+<style>
+    html, body {
+        height: 80%;
+    }
+    .product_detail_img img {
+        max-width: 330px;
+        padding: 30px 50px;
+    }
+</style>
+<div class="container-fluid">
+    <div class="row product_detail">
+        <div class="col-lg-6 product_detail_description">
+            <a>выпрямитель типа ВИ-400/12</a>
+            <p>предназначен для питания постоянным (выпрямленным) током гальванических ванн, оборудования
+                электрохимической обработки металлов и других потребителей.
+            </p>
+            <table class="table table-sm">
+                <tr>
+                    <td class="left_col">Напряжение питающей сети:</td>
+                    <td class="right_col" colspan="2">3х380 B (-15% / +10%)</td>
+                </tr>
+                <tr>
+                    <td class="left_col" colspan="2">Максимальный потребляемый ток по каждой фазе:</td>
+                    <td class="right_col">25 А</td>
+                </tr>
+                <tr>
+                    <td class="left_col" colspan="2">Диапазон регулирования выходного тока:</td>
+                    <td class="right_col">10 - 400 A</td>
+                </tr>
+                <tr>
+                    <td class="left_col" colspan="2">Диапазон регулирования выходного напряжения:</td>
+                    <td class="right_col">1.5 - 12 B</td>
+                </tr>
+                <tr>
+                    <td class="left_col" colspan="2">Продолжительность включения 200А</td>
+                    <td class="right_col">100 %</td>
+                </tr>
+                <tr>
+                    <td class="left_col" colspan="2">Стабильность установленного тока и напряжения:</td>
+                    <td class="right_col">1 %</td>
+                </tr>
+                <tr>
+                    <td class="left_col" colspan="2">Коэффициент пульсаций выходного тока, не более:</td>
+                    <td class="right_col">1 %</td>
+                </tr>
+                <tr>
+                    <td class="left_col" colspan="2">Диапазон рабочих температур:</td>
+                    <td class="right_col">от +1 до +40 º</td>
+                </tr>
+                <tr>
+                    <td class="left_col" colspan="2">Влажность окружающей среды:</td>
+                    <td class="right_col">* до 98 %</td>
+                </tr>
+                <tr>
+                    <td class="left_col" colspan="2">Степень защиты:</td>
+                    <td class="right_col">-IP - 56</td>
+                </tr>
+                <tr>
+                    <td class="left_col" colspan="2">КПД, не менее:</td>
+                    <td class="right_col">90 %</td>
+                </tr>
+                <tr>
+                    <td class="left_col">Габаритные размеры:</td>
+                    <td>высота</td>
+                    <td class="right_col">1350 мм</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>ширина</td>
+                    <td class="right_col">550 мм</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>длина</td>
+                    <td class="right_col">650 мм</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>масса не более</td>
+                    <td class="right_col">200 кг</td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="col-lg-6 product_detail_img">
+            <img src="{% static 'img/vipryamitel_vi_400_12.png' %}">
+            <div class="button_price">
+                <a href="" class="btn" role="button">рассчитать стоимость</a>
+            </div>
+            <div class="href_back_home">
+                <a href="{% url 'my_site:home' %}">вернуться на главную страницу</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

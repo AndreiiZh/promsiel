@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<style>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+</style>
+
+<section id="about_us">
+    <div class="container-fluid about_us">
+        <h2>наше оборудование эксплуатируется<br>по всему миру!</h2>
+        <div class="row top_elements">
+            <div class="col-lg-3 left_element">
+                <div>
+                    <a>аэродромное наземное оборудование</a>
+                </div>
+                <div>
+                    <img src="{% static 'img/vipramitel.png' %}" width="260" height="190">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="center_element">
+                    <img src="{% static 'img/karta.png' %}" width="450" height="250">
+                </div>
+            </div>
+            <div class="col-lg-3 right_element">
+                <a>гальваническое производство</a>
+                <img src="{% static 'img/galvanika.png' %}" width="260" height="190">
+            </div>
+        </div>
+        <div class="row section_cards">
+            <div class="card_about_us">
+                    <div class="card_about_us_title">
+                        <img src="{% static 'img/icon_1.png' %}" width="30" height="30">
+                    <a>№1</a>
+                    </div>
+                    <div class="card_about_us_text">
+                        <a>лучшее<br>ценовое<br>предложение</a>
+                    </div>
+                </div>
+            <div class="card_about_us">
+                    <div class="card_about_us_title">
+                        <img src="{% static 'img/icon_2.png' %}" width="30" height="30">
+                        <a>15</a>
+                    </div>
+                    <div class="card_about_us_text">
+                        <a>лет на рынке<br>силовой<br>электроники</a>
+                    </div>
+                </div>
+            <div class="card_about_us">
+                    <div class="card_about_us_title">
+                        <img src="{% static 'img/icon_3.png' %}" width="30" height="30">
+                        <a>100%</a>
+                    </div>
+                    <div class="card_about_us_text">
+                        <a>гарантия<br>качества</a>
+                    </div>
+                </div>
+            <div class="card_about_us">
+                    <div class="card_about_us_title">
+                        <img src="{% static 'img/icon_4.png' %}" width="30" height="30">
+                        <a>24/7</a>
+                    </div>
+                    <div class="card_about_us_text">
+                        <a>сервисное<br>обслуживание</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section id="products">
+    <div class="container products">
+        <hr>
+        <h2>оборудование</h2>
+        <div class="row products_title">
+            <div class="col-lg-6 products_type">
+                <a>аэродромное наземное оборудование</a>
+                <div class="row products_list">
+                    <div class="col-lg-3 products_img">
+                        <img src="{% static 'img/aero_product_1.png' %}" width="100" height="80">
+                    </div>
+                    <div class="col-lg-8 products_name">
+                        <a>Преобразователь_10_45_кВа_с_выходом_28в</a>
+                    </div>
+                    <div class="col-lg-3 products_img">
+                        <img src="{% static 'img/aero_product_2.png' %}" width="70" height="110">
+                    </div>
+                    <div class="col-lg-8 products_name">
+                        <a>Автономный источник серии С</a>
+                    </div>
+                    <div class="col-lg-3 products_img">
+                        <img src="{% static 'img/aero_product_3.png' %}" width="80" height="110">
+                    </div>
+                    <div class="col-lg-8 products_name">
+                        <a>Автономный источник серии М</a>
+                    </div>
+                    <div class="col-lg-3 products_img">
+                        <img src="{% static 'img/aero_product_4.png' %}" width="120" height="80">
+                    </div>
+                    <div class="col-lg-8 products_name">
+                        <a>ВА-1200</a>
+                    </div>
+                    <div class="col-lg-3 products_img">
+                        <img src="{% static 'img/aero_product_5.png' %}" width="130" height="80">
+                    </div>
+                    <div class="col-lg-8 products_name">
+                        <a>Выпрямитель 2х2400А</a>
+                    </div>
+                    <div class="col-lg-3 products_img">
+                        <img src="{% static 'img/aero_product_6.png' %}" width="120" height="80">
+                    </div>
+                    <div class="col-lg-8 products_name">
+                        <a>ПЧ-10-45кВа</a>
+                    </div>
+                    <div class="col-lg-3 products_img">
+                        <img src="{% static 'img/aero_product_7.png' %}" width="120" height="80">
+                    </div>
+                    <div class="col-lg-8 products_name">
+                        <a>Удлиннитель</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 products_type">
+                <a>гальваническое производство</a>
+                <div class="row products_list">
+                    <div class="col-lg-3 products_img">
+                        <img src="{% static 'img/galvanika_2.png' %}" width="120" height="80">
+                    </div>
+                    <div class="col-lg-8 products_name">
+                        <a>выпрямитель типа ВИР-150/15</a>
+                    </div>
+                    <div class="col-lg-3 products_img">
+                        <img src="{% static 'img/galvanika_1.png' %}" width="70" height="110">
+                    </div>
+                    <div class="col-lg-8 products_name">
+                        <a>выпрямитель типа ВИ-3000/15</a>
+                    </div>
+                    <div class="col-lg-3 products_img">
+                        <img src="{% static 'img/galvanika_3.png' %}" width="100" height="110">
+                    </div>
+                    <div class="col-lg-8 products_name">
+                        <a>выпрямитель типа ВИ-400/12</a>
+                    </div>
+                    <div class="col-lg-3 products_img">
+                        <img src="{% static 'img/galvanika_4.png' %}" width="120" height="80">
+                    </div>
+                    <div class="col-lg-8 products_name">
+                        <a>выпрямитель типа ВИ-100/30</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
